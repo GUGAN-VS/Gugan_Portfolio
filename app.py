@@ -59,6 +59,7 @@ st.markdown(
     """
     <style>
         footer {visibility: hidden;}
+        .st-emotion-cache-18ni7ap {visibility: hidden;} /* Hides Streamlit main header */
     </style>
     """,
     unsafe_allow_html=True,
