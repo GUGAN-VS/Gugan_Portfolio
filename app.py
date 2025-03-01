@@ -58,10 +58,24 @@ pg.run()
 st.markdown(
     """
     <style>
-        header {visibility: hidden;}
-        .st-emotion-cache-zq5wmm {display: none !important;}
+        /* Hide the Streamlit top header bar */
+        header[data-testid="stHeader"] {
+            visibility: hidden;
+            height: 0px;
+        }
+
+        /* Hide the specific icons (Share, Edit, GitHub) */
+        .st-emotion-cache-zq5wmm {
+            display: none !important;
+        }
+        
+        /* Ensure sidebar headers remain visible */
+        div[data-testid="stSidebarNav"] h2 {
+            visibility: visible !important;
+        }
     </style>
     """,
     unsafe_allow_html=True
 )
+
 
