@@ -58,9 +58,9 @@ pg.run()
 st.markdown(
     """
     <style>
-        footer {visibility: hidden;}
-        .st-emotion-cache-18ni7ap {visibility: hidden;} /* Hides Streamlit main header */
+        header {visibility: hidden;}
+        .st-emotion-cache-zq5wmm {display: none !important;}
     </style>
     """,
-    unsafe_allow_html=True,
+    unsafe_allow_html=True
 )
