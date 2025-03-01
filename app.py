@@ -57,14 +57,10 @@ pg.run()
 
 st.markdown(
     """
-    <script>
-        setTimeout(function() {
-            var elements = document.querySelectorAll('[title="Share"], [title="Edit source"], [title="View source on GitHub"]');
-            elements.forEach(function(el) {
-                el.style.display = "none";
-            });
-        }, 1000);
-    </script>
+    <style>
+        header {visibility: hidden;}
+        .st-emotion-cache-zq5wmm {display: none !important;}
+    </style>
     """,
     unsafe_allow_html=True
 )
