@@ -58,8 +58,12 @@ pg.run()
 st.markdown(
     """
     <style>
-        header {visibility: hidden;}
-        .st-emotion-cache-zq5wmm {display: none !important;}
+        /* Hide the Share, Edit, and GitHub icons */
+        [title="Share"], 
+        [title="Edit source"], 
+        [title="View source on GitHub"] {
+            display: none !important;
+        }
     </style>
     """,
     unsafe_allow_html=True
