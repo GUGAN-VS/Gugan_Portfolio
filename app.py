@@ -57,14 +57,15 @@ pg.run()
 
 st.markdown(
     """
-    <style>
-        /* Hide the Share, Edit, and GitHub icons */
-        [title="Share"], 
-        [title="Edit source"], 
-        [title="View source on GitHub"] {
-            display: none !important;
-        }
-    </style>
+    <script>
+        setTimeout(function() {
+            var elements = document.querySelectorAll('[title="Share"], [title="Edit source"], [title="View source on GitHub"]');
+            elements.forEach(function(el) {
+                el.style.display = "none";
+            });
+        }, 1000);
+    </script>
     """,
     unsafe_allow_html=True
 )
+
