@@ -54,3 +54,13 @@ st.logo("./assets/my_logo.png")
 st.sidebar.text("Made with ❤️ by Gugan")
 
 pg.run()
+
+# st.markdown(
+#     """
+#     <style>
+#         footer {visibility: hidden;}
+#         header {visibility: hidden;}
+#     </style>
+#     """,
+#     unsafe_allow_html=True,
+# )
